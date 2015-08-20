@@ -20,6 +20,9 @@ angular.module('starter.controllers', [])
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
+.controller('MyCtrl', function($scope) {
+      $scope.name = 'Hola...'
+})
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
