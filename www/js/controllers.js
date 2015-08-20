@@ -20,8 +20,9 @@ angular.module('starter.controllers', [])
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
-.controller('MyCtrl', function($scope) {
+.controller('MyCtrl', function($scope,MyTab) {
       $scope.name = 'Hola...'
+      $scope.todo = MyTab.todo();
 })
 
 .controller('AccountCtrl', function($scope) {

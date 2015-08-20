@@ -8,5 +8,13 @@
         </div>
       </div>
     </div>
+      <div>
+      <ion-list>
+          <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="todoitem in todo" type="item-text-wrap" href="#/tab/my/{{todo.id}}">
+              <h2><b>{{todoitem.id}}</b> : {{todoitem.task}}</h2>
+          </ion-item>
+      </ion-list>
+      </div>
   </ion-content>
+
 </ion-view>

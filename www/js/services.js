@@ -47,4 +47,23 @@ angular.module('starter.services', [])
       return null;
     }
   };
-});
+})
+
+    .factory('MyTab', function() {
+      // Might use a resource here that returns a JSON array
+
+      // Some fake testing data
+      var todo = [{
+        id: 0,
+        task: 'Finish this course'
+      }, {
+        id: 1,
+        task: 'enjoy...'
+      }];
+
+      return {
+        todo: function() {
+          return todo;
+        }
+      };
+    });
